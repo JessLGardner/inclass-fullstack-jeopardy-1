@@ -11,6 +11,7 @@ router.get("/", (req, res) => {
 
 router.post("/", (req, res) => {
   const newCategory = new Category();
+  console.log(req.body);
   newCategory.name = req.body.category.name;
   
   const newQuestions = req.body.category.questions.map((question) => {
