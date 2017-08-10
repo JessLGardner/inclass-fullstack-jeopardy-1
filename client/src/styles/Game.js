@@ -21,6 +21,7 @@ export const TileStyle = styled.div`
   background: #2A3698;
   height: 16.67%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   font-size: ${props => props.active ? "1rem" : "2rem"};
